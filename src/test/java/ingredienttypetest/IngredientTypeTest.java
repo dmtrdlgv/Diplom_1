@@ -10,12 +10,12 @@ public class IngredientTypeTest {
     private IngredientType type;
 
     @Test
-    public void ingredientTypeHasItemSauceExpectedNotNull() {
+    public void ingredientType_HasItemSauce_ExpectedNotNull() {
         assertNotNull("Начинка не указана в ингредиентах", type.valueOf("SAUCE"));
     }
 
     @Test
-    public void ingredientTypeHasItemFillingExpectedNotNull() {
+    public void ingredientType_HasItemFilling_ExpectedNotNull() {
         assertNotNull("Начинка не указана в ингредиентах", type.valueOf("FILLING"));
     }
 }

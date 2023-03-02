@@ -20,7 +20,7 @@ public class CreateObjectBunParametrizedTest {
     }
 
     //Параметры для создания объекта класса Bun
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: \"{0}\"; {1};")
     public static Object[][] getData() {
         return new Object[][]{
                 {"Тестовая булочка", 1000.11f},
@@ -35,7 +35,7 @@ public class CreateObjectBunParametrizedTest {
     }
 
     @Test
-    public void createNewObjectBunWithParametersExpectedNotNull() {
+    public void createNewObjectBun_WithParameters_ExpectedNotNull() {
         bun = new Bun(bunName, bunPrice);
         assertNotNull(bun);
     }

@@ -20,13 +20,13 @@ public class BunTest {
     }
 
     @Test
-    public void getNameExpectedBunName() {
+    public void getName_ExpectedBunName() {
         actualBunName = bun.getName();
         assertEquals(bunName, actualBunName);
     }
 
     @Test
-    public void getPriceExpectedBunPrice() {
+    public void getPrice_ExpectedBunPrice() {
         actualBunPrice = bun.getPrice();
         assertEquals(bunPrice, actualBunPrice, 0);
     }
